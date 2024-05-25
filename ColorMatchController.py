@@ -39,7 +39,7 @@ class ColorMatchController:
             self._display.reset()
             self.game()
         else:
-            self._display.showText(f'Press White')
+            self._display.showText(f'Press Black')
             self._display.showText(f'To Start',row=1)
     
     #Main game method
