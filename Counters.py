@@ -107,6 +107,15 @@ class TimeKeeper(Counter):
         hr = (curtime // 3600000)
         return f"{hr:02d}:{min:02d}:{sec:02d}.{ms:03d}"
 
+    def getSec(self):
+        
+        curtime = self._count + (time.ticks_diff(time.ticks_ms(),self._starttime) if self._running else 0)
+        ms = curtime % 1000
+        sec = (curtime // 1000) % 60
+        min = (curtime // 60000) % 60
+        hr = (curtime // 3600000)
+        return sec
+
 
 class BaseTimer(Counter):
     """ 

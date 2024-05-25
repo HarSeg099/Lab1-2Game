@@ -117,6 +117,10 @@ class LightStrip(Light):
             self.rainbow_cycle(0)
         self._running = False
 
+    def getNumLeds(self):
+        num = self.getattr(numleds)
+        return num
+
 
     ################# Internal functions should not be used outside here #################
     def _set_pixel(self, p, color):
