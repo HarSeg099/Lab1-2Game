@@ -75,7 +75,6 @@
     }
   ],
   "connections": [
-    [ "bb1:20b.i", "bb1:bn.26", "green", [ "v0" ] ],
     [ "btn1:2.r", "pico:GP10", "green", [ "v29", "h-105.8" ] ],
     [ "btn1:1.r", "bb1:bn.27", "green", [ "v77", "h48" ] ],
     [ "btn2:2.r", "pico:GP11", "green", [ "v38.6", "h-144.2" ] ],
@@ -93,6 +92,8 @@
     [ "lcd1:VCC", "bb1:3t.a", "red", [ "h0" ] ],
     [ "lcd1:SCL", "pico:GP1", "green", [ "h-9.6", "v326.7", "h-192" ] ],
     [ "lcd1:SDA", "pico:GP0", "green", [ "h-230.4", "v0.2" ] ],
+    [ "btn5:1.r", "bb1:bn.31", "green", [ "v0" ] ],
+    [ "btn5:2.r", "pico:GP14", "green", [ "v77", "h-317" ] ],
     [ "pico:GP0", "bb1:3b.h", "", [ "$bb" ] ],
     [ "pico:GP1", "bb1:4b.h", "", [ "$bb" ] ],
     [ "pico:GND.1", "bb1:5b.h", "", [ "$bb" ] ],
@@ -153,8 +154,7 @@
     [ "btn5:2.l", "bb1:54t.c", "", [ "$bb" ] ],
     [ "btn5:1.r", "bb1:56b.h", "", [ "$bb" ] ],
     [ "btn5:2.r", "bb1:54b.h", "", [ "$bb" ] ],
-    [ "btn5:1.r", "bb1:bn.31", "green", [ "v0" ] ],
-    [ "btn5:2.r", "pico:GP14", "green", [ "v77", "h-317" ] ]
+    [ "bb1:bn.26", "pico:GND.4", "green", [ "v27.5", "h-125.6" ] ]
   ],
   "dependencies": {}
 }

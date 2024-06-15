@@ -57,6 +57,9 @@ class Button:
                     self._buttonhandler.buttonReleased(self._name)
         #self._debounce_time=t
 
+    def getName(self):
+        return self._name
+
 class Joystick(Button):
     """
     A joystick is technically more than a Button, but this is an example

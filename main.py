@@ -5,17 +5,9 @@ print("Hello, Pi Pico!")
 
 from ColorMatchController import *
 
-#instantiates the ColorMatchController
-myColorMatch = ColorMatchController()
+#Be aware that there is a delay on button inputs in Wokwi so at times
+#it will not pick up the button inputs during the sleep; juts keep
+#pressing it and it will pick it up eventually (issue is for Wokwi)
+MyGame = ColorMatchController()
 
-while True:
-    #Waits for button input to continue
-    #if GPIO.input(button):
-    #    myColorMatch.buttonReleased()
-
-    if myColorMatch.buttonReleased(black) == True:
-        myColorMatch.buttonReleased(black)
-
-
-
-
+MyGame.gameInitiate()
